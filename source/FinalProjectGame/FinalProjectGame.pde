@@ -372,7 +372,11 @@ void updateScreen () {
       break;  
     case 1: // Game screen  
       background(125, 125, 125);  
-      rectMode(CENTER);  
+      rectMode(CENTER);
+      fill(0, 255, 0);
+      text("Score: " + points, width/2, 20);  
+      fill(255, 0, 0);
+      text("Lives: " + chances, width/2, 50);  
         
       drawLanesAndButtons(); // Draw the lanes and buttons.  
       removeOrShiftCircles(); // Remove the missed circles and/or move existing ones.  
